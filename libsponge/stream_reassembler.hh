@@ -14,6 +14,11 @@ class StreamReassembler {
 
     ByteStream _output;  //!< The reassembled in-order byte stream
     size_t _capacity;    //!< The maximum number of bytes
+    size_t _last_byte_pos = -1;
+    size_t _unassembled_bytes = 0;
+    bool _eof_rec = false;
+    std::vector<char> _buffer;
+    std::vector<bool> _buffer_valid;
 
   public:
     //! \brief Construct a `StreamReassembler` that will store up to `capacity` bytes.
@@ -46,6 +51,10 @@ class StreamReassembler {
     //! \brief Is the internal state empty (other than the output stream)?
     //! \returns `true` if no substrings are waiting to be assembled
     bool empty() const;
+
+    inline size_t first_unread() const { return _output.bytes_read(); }
+    inline size_t first_unassembled() const { return _output.bytes_written(); }
+    inline size_t first_unacceptable() const { return first_unread() + _capacity; }
 };
 
 #endif  // SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH
