@@ -5,8 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/d/wsl/sponge/libsponge/byte_stream.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/byte_stream.cc.o"
+  "/mnt/d/wsl/sponge/libsponge/network_interface.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/network_interface.cc.o"
   "/mnt/d/wsl/sponge/libsponge/stream_reassembler.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/stream_reassembler.cc.o"
   "/mnt/d/wsl/sponge/libsponge/tcp_connection.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_connection.cc.o"
+  "/mnt/d/wsl/sponge/libsponge/tcp_helpers/arp_message.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_helpers/arp_message.cc.o"
+  "/mnt/d/wsl/sponge/libsponge/tcp_helpers/ethernet_frame.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_helpers/ethernet_frame.cc.o"
+  "/mnt/d/wsl/sponge/libsponge/tcp_helpers/ethernet_header.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_helpers/ethernet_header.cc.o"
   "/mnt/d/wsl/sponge/libsponge/tcp_helpers/fd_adapter.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_helpers/fd_adapter.cc.o"
   "/mnt/d/wsl/sponge/libsponge/tcp_helpers/ipv4_datagram.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_helpers/ipv4_datagram.cc.o"
   "/mnt/d/wsl/sponge/libsponge/tcp_helpers/ipv4_header.cc" "/mnt/d/wsl/sponge/build/libsponge/CMakeFiles/sponge.dir/tcp_helpers/ipv4_header.cc.o"
